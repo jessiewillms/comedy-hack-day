@@ -22,11 +22,17 @@ img {
     background: #ffd500; }
   h1 {
     display: none; }
+  button {
+    width: 80%;
+    display: block;
+    margin: 10px auto; }
   .wrap {
+    display: none;
     width: 100%;
     padding: 3%; }
+  .wrap.step1 li {
+    width: 19%; }
   .wrap li {
-    width: 19%;
     float: left;
     margin-left: 1%;
     list-style-type: none;

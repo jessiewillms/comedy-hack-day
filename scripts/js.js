@@ -3,6 +3,22 @@ var app = {
 	selected_activity: ""
 };
 
+// show/hide sections based on button 
+
+$('main button').click(function(){
+	var selected_category = $(this).attr('data-category');
+
+	$('section.wrap').each(function(){
+		if ($(this).attr('data-category') === selected_category) {
+			$(this).show();
+		} else{
+			$(this).hide();
+		};
+	});
+});
+
+
+
 $('.step1 ul li').click(function(){
 	app.current_room = $(this).attr('data-room');
 

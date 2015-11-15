@@ -6,13 +6,21 @@
 		display: none;
 	}
 
+	button {
+		width: 80%;
+		display: block;
+		margin: $m auto;
+	}
 	.wrap {
+		display: none;
 		width: 100%;
 		padding: $p;
-
+		&.step1 li {
+			width: (100% - 5) / 5;
+		}
 
 		li {
-			width: (100% - 5) / 5;
+			
 			float: left;
 			margin-left: 1%;
 			list-style-type: none;
