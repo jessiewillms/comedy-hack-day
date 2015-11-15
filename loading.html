@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>untitled</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="gabriel">
+  <style type="text/css">
+    @keyframes spinning {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(720deg); opacity: 0.5; }
+    }
+    .loading {
+      padding: 10%;
+      text-align: center;
+    }
+    .loading img {
+      animation-name: spinning;
+      animation-duration: 400ms;
+      animation-delay: 100ms
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      width: 60%;
+    }
+    .loading h2 {
+      padding-top: 0.5em;
+      font: bold 48px "Courier New";
+    }
+  </style>
+</head>
+<body>
+  <div class="loading">
+    <img src="img/einstein.png">
+    <h2>Analyzing data...</h2>
+  </div>
+</body>
+</html>
