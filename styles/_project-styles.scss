@@ -21,7 +21,11 @@ h1 {
     font-size: 120px;
     line-height: 103px;
 }
-
+h1 + h2 {
+	color: rgba(255,255,255,.75);
+	font-size: 65px;
+	padding-right: 10%;
+}
 h2 {
     margin-bottom: $p;
     color: $g;
@@ -29,6 +33,7 @@ h2 {
     line-height: 1.25;
     span {
         color: $w;
+        display: none;
     }
 }
 
@@ -81,6 +86,8 @@ h3 {
 
 .step0 .forgot {
     background: $c4;
+    width: 300px;
+    padding: 10px 0;
 }
 
 .step1 .option button {

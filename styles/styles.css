@@ -36,6 +36,11 @@ h1 {
   font-size: 120px;
   line-height: 103px; }
 
+h1 + h2 {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 65px;
+  padding-right: 10%; }
+
 h2 {
   margin-bottom: 3%;
   color: #a1a1a1;
@@ -43,7 +48,8 @@ h2 {
   line-height: 1.25; }
 
 h2 span {
-  color: #fff; }
+  color: #fff;
+  display: none; }
 
 h3 {
   margin: 0 0 10px 0;
@@ -88,7 +94,9 @@ h3 {
   height: 100vh; }
 
 .step0 .forgot {
-  background: #8E44AD; }
+  background: #8E44AD;
+  width: 300px;
+  padding: 10px 0; }
 
 .step1 .option button {
   background: #F1C40F; }
