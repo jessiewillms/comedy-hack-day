@@ -16,7 +16,14 @@ html {
 	&.step {
 		display: none;
 	}
-	.step:first-of-type {
-		display: inline-block;
-	}
+	
+}
+.wrap.step.step0 {
+	display: block;
+}
+
+button.next {
+	width: $width;
+	display: block;
+	margin: 0 auto;
 }
