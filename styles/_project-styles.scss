@@ -1,29 +1,53 @@
 .wrapper {
-	max-width: 415px;
 	display: block;
 	margin: 0 auto;
-	background: $mobile;
+	padding: $p;
 }
 html {
-	background: $mobile;
+	background: $c;
 }	
-
+.pop-up {
+	display: none;
+}
 .wrap {
-	width: $width;
 	padding: $p;
 	margin: $m auto;
-	border: $b-white;
-	&.step {
-		display: none;
-	}
-	
+	display: none;
 }
-.wrap.step.step0 {
+
+.wrap.step1 {
 	display: block;
 }
 
-button.next {
-	width: $width;
+.option {
+	display: none;
+}
+.option:nth-of-type(1) {
 	display: block;
-	margin: 0 auto;
+}
+
+h2 {
+	color: $g;
+	font-size: 60px;
+	font-family: $hed;
+	line-height: 1.25;
+	span {
+		color: $w;
+	}
+}
+h3 {
+	color: $w;
+	letter-spacing: 3px;
+	margin-bottom: $m;
+}
+button {
+	width: 30%;
+	padding: $m $sm;
+	border-radius: 35px;
+	background: $c;
+	color: $w;
+	font-size: 36px;
+	font-weight: $fw-bold;
+	border: $b-white;
+	margin: $p 0;
 }

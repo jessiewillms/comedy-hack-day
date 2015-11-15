@@ -1,46 +1,62 @@
 var app = {
-	current_room: "",
-	selected_activity: "",
-	active_array: [],
-	counter: 0
+    counter: 0,
+    random: "",
+    jokes1: [],
+    jokes2: [],
+    jokes3: [],
+    jokes4: [],
+    jokes5: [],
+    jokes6: []
 };
 
-var data = {
-	"step1" : {
-		"joke": "step1 joke 1 lorem joke one",
-		"joke1": "lorem joke two",
-		"joke2": "lorem joke three"
-	},
-	"step2" : {
-		"joke": "step2 joke 1 lorem joke one",
-		"joke1": "lorem joke two",
-		"joke2": "lorem joke three"
-	}
-}
+function getJson(json) {
+
+    for (var i = 0; i < json.feed.entry.length; i++) {
+        entry = json.feed.entry[i];
+
+        app.jokes1.push(entry.gsx$step1.$t);
+        app.jokes2.push(entry.gsx$step2.$t);
+        app.jokes3.push(entry.gsx$step3.$t);
+        app.jokes4.push(entry.gsx$step4.$t);
+        app.jokes5.push(entry.gsx$step5.$t);
+        app.jokes6.push(entry.gsx$step6.$t);
+
+    }
 
 
-console.log(data.step1.joke)
+    $('.next').click(function() {
+        app.random = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
+
+        app.counter++;
+        var steps = "step" + app.counter;
+
+        $("." + steps).show();
 
 
-$('.next').click(function(){
-	app.counter++;
-	var steps = ".step" + app.counter;
-	$(steps).show();
+        if (steps == 'step1') {
+        	console.log('yeah')
+        	$('.site').append('<li>' + app.jokes1[app.random] + '</li>');
+        } else if (steps == 'step2'){
+        	$('.step2 ul.jokes-here').append('<li>' + app.jokes2[app.random] + '</li>');
+        } else if (steps == 'step3'){
+        	$('.step3 ul.jokes-here').append('<li>' + app.jokes3[app.random] + '</li>');
+        } else if (steps == 'step4'){
+        	$('.step4 ul.jokes-here').append('<li>' + app.jokes4[app.random] + '</li>');
+        } else if (steps == 'step5'){
+        	$('.step5 ul.jokes-here').append('<li>' + app.jokes5[app.random] + '</li>');
+        } else if (steps == 'step6'){
+        	$('.step6 ul.jokes-here').append('<li>' + app.jokes6[app.random] + '</li>');
+        };
+
+    });
+};
 
 
-	$(steps).append('<li>' + data.step1.joke + '</li>')
-});
-
-app.eureka = function() {
-	var text = $('h1').html().split('');
-	// console.log(text)
-	// $('h1').fadeIn('slow', function () {
-	//   $(this).delay(5000).fadeOut('slow');
-	// });
-}
 
 app.init = function() {
-	app.eureka();
+
+
+    // $('.step1 .site').html(step_1_jokes[random])
 };
 
 $(function() {
