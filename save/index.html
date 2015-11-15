@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toronto Star</title>
+    <link href='https://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <body>
+        <section class="wrapper">
+            <header>
+                <h1>eureka!</h1>
+            </header>
+            <main>
+                <button data-category="science">Understand the Science</button>
+                <button data-category="habits">Let’s get to know your habits</button>
+                <button data-category="forgot">I forgot!</button>
+            </main>
+            <section class="wrap" data-category="science">
+                <p>“Kids these days don’t remember anything because their brains are turning to mush on the internet” --that old lady who lives two doors down the street with all the cats.</p>
+                <img src="images/albert.gif" alt="Albert En">
+                <p>But that cat lady is crazy! Forgetting things when you move into a new room is a scientific phenomenon called the Doorway Theory. It’s science! When you enter a new room, the stimuli flooding in pushes your original idea out of your brain causing you to forget what you were in the process of doing. So you’re not an idiot, it’s quite normal, in fact if you don’t forget things when you go into a new room you are probably a serial killer...there’s probably a different app for that. </p>
+            </section>
+            <section class="wrap" data-category="habits">
+                <div class="step1 steps">
+                    <h2>step 1</h2>
+                    <ul class="cf">
+                        <li data-room="living_room">
+                            <p>living room</p>
+                            <!-- <img src="images/room-1.png" alt=""> -->
+                        </li>
+                        <li data-room="hallway">
+                            <p>hallway</p>
+                            <!-- <img src="images/room-1.png" alt=""> -->
+                        </li>
+                        <li data-room="kitchen">
+                            <p>kitchen</p>
+                            <!-- <img src="images/room-1.png" alt=""> -->
+                        </li>
+                        <li data-room="bathroom">
+                            <p>bathroom</p>
+                            <!-- <img src="images/room-1.png" alt=""> -->
+                        </li>
+                        <li data-room="bedroom">
+                            <p>bedroom</p>
+                            <!-- <img src="images/room-1.png" alt=""> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="step2 steps">
+                    <h2>step 2</h2>
+                    <ul class="cf" data-room="living_room">
+                        <li data-activity="sandwich">making a sandwich</li>
+                        <li data-activity="hampster">murdering a hamster</li>
+                        <li data-activity="masturbate">masturbate</li>
+                    </ul>
+                </div>
+                <div class="step3 steps">
+                    <h2>step 3</h2>
+                    <button class="submit">Submit</button>
+                </div>
+
+                 <div class="step4 steps">
+                    <h2>step 4</h2>
+                    <p>now rank these things</p>
+                    <ul></ul>
+                </div>
+            </section>
+            <section class="wrap" data-category="forgot">
+                <p>“Kids these days don’t remember anything because their brains are turning to mush on the internet” --that old lady who lives two doors down the street with all the cats.</p>
+                <img src="images/albert.gif" alt="Albert En">
+            </section>
+            <section class="wrap step4">
+                <h2>step 4</h2>
+            </section>
+        </section>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="scripts/js.js"></script>
+    </body>
+
+</html>
+<!-- <script src="https://spreadsheets.google.com/feeds/list/ KEY /1/public/values?alt=json-in-script&callback=getJson"></script> 
+// function getJson(json) {
+
+//     var content = "";
+
+//     h1 = json.feed.entry[0].gsx$h1.$t;
+
+//     for (var i = 0; i < json.feed.entry.length; i++) {
+//         entry = json.feed.entry[i];
+
+//         var copy = entry.gsx$copy.$t;
+
+//         content += '<div class="wrap">' +  + '</div>';
+//     }
+//     $('.wrapper').append(content);
+// };
+
+
+-->

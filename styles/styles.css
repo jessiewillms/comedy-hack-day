@@ -143,3 +143,9 @@ button.yes {
 
 .letter {
   color: white; }
+
+.mb-wrapper {
+  background: #C0392B; }
+
+.mb {
+  display: none; }
