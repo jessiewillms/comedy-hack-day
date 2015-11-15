@@ -17,23 +17,23 @@ img {
   display: table;
   clear: both; }
 
-@media (max-width: 415px) {
-  html {
-    background: #ffd500; }
-  h1 {
-    display: none; }
-  button {
-    width: 80%;
-    display: block;
-    margin: 10px auto; }
-  .wrap {
-    display: none;
-    width: 100%;
-    padding: 3%; }
-  .wrap.step1 li {
-    width: 19%; }
-  .wrap li {
-    float: left;
-    margin-left: 1%;
-    list-style-type: none;
-    border: 2px solid #fff; } }
+.wrapper {
+  max-width: 415px;
+  display: block;
+  margin: 0 auto;
+  background: #ffd500; }
+
+html {
+  background: #ffd500; }
+
+.wrap {
+  width: 85%;
+  padding: 3%;
+  margin: 10px auto;
+  border: 2px solid #fff; }
+
+.wrap.step {
+  display: none; }
+
+.wrap .step:first-of-type {
+  display: inline-block; }

@@ -1,37 +1,26 @@
 var app = {
 	current_room: "",
-	selected_activity: ""
+	selected_activity: "",
+	active_array: []
 };
 
-// show/hide sections based on button 
-
-$('main button').click(function(){
-	var selected_category = $(this).attr('data-category');
-
-	$('section.wrap').each(function(){
-		if ($(this).attr('data-category') === selected_category) {
-			$(this).show();
-		} else{
-			$(this).hide();
-		};
-	});
-});
-
+var data = {
+	"step1" : {
+		"joke": "lorem joke one",
+		"joke1": "lorem joke two",
+		"joke2": "lorem joke three"
+	},
+	"step2" : {
+		"joke": "lorem joke one",
+		"joke1": "lorem joke two",
+		"joke2": "lorem joke three"
+	}
+}
 
 
-$('.step1 ul li').click(function(){
-	app.current_room = $(this).attr('data-room');
+console.log(data.step1.joke)
 
-});
 
-$('.step2 ul li').click(function(){
-	app.selected_activity = $(this).attr('data-activity');
-});
-
-$('.step3 button.submit').click(function(){
-	console.log(app.selected_activity);
-	console.log(app.current_room)
-});
 
 app.eureka = function() {
 	var text = $('h1').html().split('');
@@ -43,7 +32,6 @@ app.eureka = function() {
 
 app.init = function() {
 	app.eureka();
-
 };
 
 $(function() {
