@@ -1,53 +1,118 @@
+body {
+    font-family: $hed;
+}
+
 .wrapper {
-	display: block;
-	margin: 0 auto;
-	padding: $p;
+    width: 100%;
+    height: 100vh;
 }
-html {
-	background: $c;
-}	
-.pop-up {
-	display: none;
-}
+
 .wrap {
-	padding: $p;
-	margin: $m auto;
-	display: none;
+    display: none;
+    margin: 0;
+    padding: $p;
+    width: 100%;
+    height: 100vh;
 }
 
-.wrap.step1 {
-	display: block;
-}
 
-.option {
-	display: none;
-}
-.option:nth-of-type(1) {
-	display: block;
+h1 {
+    color: $w;
+    font-size: 120px;
+    line-height: 103px;
 }
 
 h2 {
-	color: $g;
-	font-size: 60px;
-	font-family: $hed;
-	line-height: 1.25;
-	span {
-		color: $w;
-	}
+    margin-bottom: $p;
+    color: $g;
+    font-size: 32px;
+    line-height: 1.25;
+    span {
+        color: $w;
+    }
 }
+
 h3 {
-	color: $w;
-	letter-spacing: 3px;
-	margin-bottom: $m;
+    margin: 0 0 $m 0;
+    color: $w;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    opacity: .65;
+}
+.option {
+	height: 100vh;
+	display: none;
+}
+.step0 {
+    display: inline-block;
+    background: $c4;
+}
+.step1 {
+    background: $c;
+}
+.step2 {
+    background: $c2;
+}
+.step3 {
+    background: $c3;
+}
+.pop-up {
+    display: none;
+}
+
+.img-wrap {
+    overflow: hidden;
+    max-height: 400px;
+
+    img {
+    	display: block;
+    	margin: 0 auto;
+    }
+}
+
+.half-wrap {
+    float: left;
+    width: 100%;
+    height: 100vh;
+}
+
+.step0 .forgot {
+    background: $c4;
+}
+
+.step1 .option button {
+    background: $c;
+}
+
+.step2 .option button {
+    background: $c2;
+}
+
+.step3 .option button {
+    background: $c3;
+}
+
+.bttn-wrap {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+}
+.something-else .bttn-wrap button {
+	width: 220px;
 }
 button {
-	width: 30%;
-	padding: $m $sm;
-	border-radius: 35px;
-	background: $c;
+    margin: $m 0;
+    padding: 5px 0;
+    width: 165px;
+    border: $b-white;
+    border-radius: 35px;
 	color: $w;
-	font-size: 36px;
-	font-weight: $fw-bold;
-	border: $b-white;
-	margin: $p 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+button.yes {
+	color: rgba(255, 255, 255, .4);
+}
+.letter {
+    color: rgba(255, 255, 255, 1);
 }

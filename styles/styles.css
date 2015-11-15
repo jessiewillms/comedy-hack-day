@@ -17,52 +17,106 @@ img {
   display: table;
   clear: both; }
 
+body {
+  font-family: "Poppins", Georgia; }
+
 .wrapper {
-  display: block;
-  margin: 0 auto;
-  padding: 3%; }
-
-html {
-  background: #F1C40F; }
-
-.pop-up {
-  display: none; }
+  width: 100%;
+  height: 100vh; }
 
 .wrap {
+  display: none;
+  margin: 0;
   padding: 3%;
-  margin: 10px auto;
-  display: none; }
+  width: 100%;
+  height: 100vh; }
 
-.wrap.step1 {
-  display: block; }
-
-.option {
-  display: none; }
-
-.option:nth-of-type(1) {
-  display: block; }
+h1 {
+  color: #fff;
+  font-size: 120px;
+  line-height: 103px; }
 
 h2 {
+  margin-bottom: 3%;
   color: #a1a1a1;
-  font-size: 60px;
-  font-family: "Poppins", Georgia;
+  font-size: 32px;
   line-height: 1.25; }
 
 h2 span {
   color: #fff; }
 
 h3 {
+  margin: 0 0 10px 0;
   color: #fff;
-  letter-spacing: 3px;
-  margin-bottom: 10px; }
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  opacity: .65; }
+
+.option {
+  height: 100vh;
+  display: none; }
+
+.step0 {
+  display: inline-block;
+  background: #8E44AD; }
+
+.step1 {
+  background: #F1C40F; }
+
+.step2 {
+  background: #2980B9; }
+
+.step3 {
+  background: #9B59B6; }
+
+.pop-up {
+  display: none; }
+
+.img-wrap {
+  overflow: hidden;
+  max-height: 400px; }
+
+.img-wrap img {
+  display: block;
+  margin: 0 auto; }
+
+.half-wrap {
+  float: left;
+  width: 100%;
+  height: 100vh; }
+
+.step0 .forgot {
+  background: #8E44AD; }
+
+.step1 .option button {
+  background: #F1C40F; }
+
+.step2 .option button {
+  background: #2980B9; }
+
+.step3 .option button {
+  background: #9B59B6; }
+
+.bttn-wrap {
+  position: absolute;
+  right: 3%;
+  bottom: 3%; }
+
+.something-else .bttn-wrap button {
+  width: 220px; }
 
 button {
-  width: 30%;
-  padding: 10px 5px;
+  margin: 10px 0;
+  padding: 5px 0;
+  width: 165px;
+  border: 2px solid #fff;
   border-radius: 35px;
-  background: #F1C40F;
   color: #fff;
-  font-size: 36px;
   font-weight: 700;
-  border: 3px solid #fff;
-  margin: 3% 0; }
+  font-size: 22px; }
+
+button.yes {
+  color: rgba(255, 255, 255, 0.4); }
+
+.letter {
+  color: white; }
