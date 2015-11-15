@@ -43,9 +43,12 @@ h3 {
 	height: 100vh;
 	display: none;
 }
+
 .step0 {
     display: inline-block;
     background: $c4;
+    width: 100%;
+    height: 100vh;
 }
 .step1 {
     background: $c;
@@ -96,6 +99,20 @@ h3 {
     position: absolute;
     right: 3%;
     bottom: 3%;
+}
+.first-screen{
+	background: #34495E;
+	width: 100%;
+	height: 100vh;
+	padding: $p;
+
+	button {
+		width: 225px;
+		display: block;
+		margin: 10px 0;
+		padding: 20px 0;
+		background: #34495E;
+	}
 }
 .something-else .bttn-wrap button {
 	width: 220px;
