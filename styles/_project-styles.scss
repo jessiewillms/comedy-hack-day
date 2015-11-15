@@ -5,4 +5,18 @@
 	h1 {
 		display: none;
 	}
+
+	.wrap {
+		width: 100%;
+		padding: $p;
+
+
+		li {
+			width: (100% - 5) / 5;
+			float: left;
+			margin-left: 1%;
+			list-style-type: none;
+			border: $b-white;
+		}
+	}
 }
