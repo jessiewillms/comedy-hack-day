@@ -1,25 +1,23 @@
 var app = {};
 
 
-function getJson(json) {
 
-    var content = "";
+$('li').click(function(){
+	var current_room = $(this).attr('data-room');
 
-    h1 = json.feed.entry[0].gsx$h1.$t;
+	
+});
 
-    for (var i = 0; i < json.feed.entry.length; i++) {
-        entry = json.feed.entry[i];
-
-        var copy = entry.gsx$copy.$t;
-
-        content += '<div class="wrap">' +  + '</div>';
-    }
-    $('.wrapper').append(content);
-};
-
+app.eureka = function() {
+	var text = $('h1').html().split('');
+	console.log(text)
+	$('h1').fadeIn('slow', function () {
+	  $(this).delay(5000).fadeOut('slow');
+	});
+}
 
 app.init = function() {
-
+	app.eureka();
 
 };
 

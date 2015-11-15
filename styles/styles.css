@@ -21,4 +21,6 @@ img {
 
 @media (max-width: 415px) {
   html {
-    background: #ffd500; } }
+    background: #ffd500; }
+  h1 {
+    display: none; } }

@@ -11,7 +11,36 @@
     <link rel="stylesheet" href="styles/styles.css" />
 
     <body>
-        <section class="wrapper"></section>
+        <section class="wrapper">
+            <header>
+                <h1>eureka!</h1>
+            </header>
+
+            <section class="wrap step-1">
+                <ul>
+                    <li data-room="living_room">
+                        <p>living room</p>
+                        <img src="images/room-1.png" alt="">
+                        <p>Lorem ipsum.</p>
+                    </li>
+                    <li data-room="dining_room">
+                        <p>dining room</p>
+                        <img src="images/room-1.png" alt="">
+                        <p>Lorem ipsum.</p>
+                    </li>
+                    <li data-room="kitchen">
+                        <p>kitchen</p>
+                        <img src="images/room-1.png" alt="">
+                        <p>Lorem ipsum.</p>
+                    </li>
+                    <li data-room="bathroom">
+                        <p>bathroom</p>
+                        <img src="images/room-1.png" alt="">
+                        <p>Lorem ipsum.</p>
+                    </li>
+                </ul>
+            </section>
+        </section>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="scripts/js.js"></script>
     </body>
@@ -19,4 +48,22 @@
 
 
 
-<!-- <script src="https://spreadsheets.google.com/feeds/list/ KEY /1/public/values?alt=json-in-script&callback=getJson"></script> -->
+<!-- <script src="https://spreadsheets.google.com/feeds/list/ KEY /1/public/values?alt=json-in-script&callback=getJson"></script> 
+// function getJson(json) {
+
+//     var content = "";
+
+//     h1 = json.feed.entry[0].gsx$h1.$t;
+
+//     for (var i = 0; i < json.feed.entry.length; i++) {
+//         entry = json.feed.entry[i];
+
+//         var copy = entry.gsx$copy.$t;
+
+//         content += '<div class="wrap">' +  + '</div>';
+//     }
+//     $('.wrapper').append(content);
+// };
+
+
+-->
