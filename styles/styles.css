@@ -160,7 +160,8 @@ button.yes {
   color: #fff; }
 
 .mb {
-  display: none; }
+  display: none;
+  margin-bottom: 590px; }
 
 .pop-up {
   width: 100%;

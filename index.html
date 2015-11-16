@@ -1,1 +1,550 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toronto Star</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", Arial, sans-serif; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  width: 100%; }
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body {
+  font-family: "Poppins", Georgia; }
+
+.placeholder {
+  width: 100%;
+  height: 1000px;
+  background: black; }
+
+.wrapper {
+  width: 100%;
+  height: 100vh; }
+
+.wrap {
+  display: none;
+  margin: 0;
+  padding: 3% 10%;
+  width: 100%;
+  height: 100vh; }
+
+h1 {
+  color: #fff;
+  font-size: 120px;
+  line-height: 103px; }
+
+h2 {
+  font-size: 38px; }
+
+h1 + h2 {
+  color: rgba(255, 255, 255, 0.75);
+  padding-right: 10%; }
+
+h2 {
+  margin-bottom: 3%;
+  color: #a1a1a1;
+  line-height: 1.25; }
+
+h2 span {
+  color: #fff;
+  display: none; }
+
+h3 {
+  margin: 0 0 10px 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  opacity: .65; }
+
+.option {
+  height: 100vh;
+  display: none; }
+
+.step0 {
+  display: inline-block;
+  background: #8E44AD;
+  width: 100%;
+  height: 100vh; }
+
+.step1 {
+  background: #F1C40F; }
+
+.step2 {
+  background: #2980B9; }
+
+.step3 {
+  background: #9B59B6; }
+
+.pop-up {
+  display: none; }
+
+#masterbate {
+  display: none; }
+
+.img-wrap {
+  overflow: hidden;
+  max-height: 500px;
+  display: none; }
+
+.img-wrap img {
+  display: block;
+  margin: 0 auto; }
+
+.half-wrap {
+  float: left;
+  width: 100%;
+  height: 100vh; }
+
+.step0 .forgot {
+  background: #8E44AD;
+  width: 300px;
+  padding: 10px 0; }
+
+.step1 .option button {
+  background: #F1C40F; }
+
+.step2 .option button {
+  background: #2980B9; }
+
+.step3 .option button {
+  background: #9B59B6; }
+
+.bttn-wrap {
+  position: absolute;
+  right: 3%;
+  bottom: 3%; }
+
+.first-screen {
+  background: #34495E;
+  width: 100%;
+  height: 100vh;
+  padding: 3%; }
+
+.first-screen button {
+  width: 225px;
+  display: block;
+  margin: 10px 0;
+  padding: 20px 0;
+  background: #34495E; }
+
+.something-else .bttn-wrap button {
+  width: 220px; }
+
+button {
+  margin: 10px 0;
+  padding: 5px 0;
+  width: 165px;
+  border: 2px solid #fff;
+  border-radius: 35px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px; }
+
+button.yes {
+  color: white; }
+
+.letter {
+  color: white; }
+
+.mb-wrapper {
+  background: #C0392B;
+  padding: 10%;
+  color: #fff; }
+
+.mb {
+  display: none; 
+    margin-bottom: 590px;}
+
+.pop-up {
+  width: 100%;
+  height: 100vh;
+  background: #F1C40F; }
+
+.logo-top {
+  top: 5%;
+  right: 5%;
+  position: fixed;
+  max-width: 50px; }
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(720deg);
+    opacity: 0.5; } }
+
+@keyframes fade-out {
+  from {
+    opacity: 0.8; }
+  to {
+    opacity: 0; } }
+
+.loading {
+  text-align: center;
+  display: none;
+  margin-bottom: 300px; }
+
+.loading img {
+  animation-name: spinning;
+  animation-duration: 200ms;
+  animation-delay: 100ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 60%;
+  margin-bottom: 300px; }
+
+.loading h2 {
+  padding-top: 0.5em; }
+
+.logo {
+  text-align: center;
+  position: relative;
+  font-family: "Poppins", Georgia; }
+
+.logo img {
+  width: 40%; }
+
+.logo h1 {
+  opacity: 0.8;
+  position: absolute;
+  top: 25%;
+  left: 25.5%;
+  width: 50%;
+  font-size: 60px;
+  letter-spacing: 25px;
+  margin: 0; }
+
+.logo h1 span {
+  color: #fff;
+  animation-name: fade-out;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out; }
+
+#botox img {
+  float: left;
+  margin-right: 3em; }
+
+#botox li {
+  margin-bottom: 0.5em; }
+
+</style>
+
+    <body>
+        <div class="placeholder"></div>
+
+        <section class="wrapper">
+            
+            <div class="logo-top">
+                <img src="img/einstein.png">
+            </div>
+            <section class="wrap step step0">
+                <div class="logo">
+                    <img src="img/einstein.png">
+                    <h1><span>eu</span>r<span>e</span>k<span>a!</span></h1>
+                    <h2>The app that helps you remember what you were doing, <em>because you’re not an idiot—it’s science! </em></h2>
+                </div>
+                <button class="forgot">help me remember</button>
+            </section>
+            <section class="first-screen">
+                <h1>where do you want to start?</h1>
+                <div class="btn">
+                    <button id="step1">trending</button>
+                    <button id="step2">selfie analysis</button>
+                    <button id="step3">browser history</button>
+                </div>
+            </section>
+            <!-- trending -->
+            <section class="wrap step step1">
+                <h3>trending</h3>
+                <div class="option" id="option-1">
+                    <h2>your friends are all putting the French flag on their Facebook profile: <span>did you want to get Cora's French toast?</span></h2>
+                    <div class="half-wrap img-wrap">
+                        <img src="images/french.jpg" alt="">
+                    </div>
+                    <div class="bttn-wrap">
+                        <button class="yes">Eu<span class="letter">R</span>e<span class="letter">K</span>a!</button>
+                        <button class="no">No thanks</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h2>Drake’s Hotline Bling Video: <span>were you going to continue to watch all seasons of Degrassi on Netflix</span></h2>
+                    <div class="half-wrap img-wrap">
+                        <img src="images/drake.png" alt="">
+                    </div>
+                    <div class="bttn-wrap">
+                        <button class="yes">Eureka!</button>
+                        <button class="no">No thanks</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h2>the holidays are approaching: <span>were you looking for an AA group to join?</span></h2>
+                    <div class="half-wrap img-wrap">
+                        <img src="images/aa.png" alt="">
+                    </div>
+                    <div class="bttn-wrap">
+                        <button class="yes">Eureka!</button>
+                        <button class="no">No thanks</button>
+                    </div>
+                </div>
+                <div class="option something-else">
+                    <h1>don't worry, let's try something else</h1>
+                    <div class="three-bttn-wrap bttn-wrap">
+                        <button id="step1">trending</button>
+                        <button id="step2">selfie analysis</button>
+                        <button id="step3">browser history</button>
+                    </div>
+                </div>
+            </section>
+            <!-- photo -->
+            <section class="wrap step step2">
+                <h3>selfie analysis</h3>
+                
+                <div class="option" id="option-2">
+                    <h2>you look tired:<span id="donotshow"> were you going to treat yourself to a peppermint creme brulee chestnut candy cane frappachino lattespresso? Your local Starbucks is only 27m away! </span></h2>
+                    <div class="half-wrap img-wrap">
+                        <img src="images/tired.png">
+                    </div>
+                    <div class="bttn-wrap">
+                        <button class="yes">Eureka!</button>
+                        <button class="no">No thanks</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h2>you look pale: <span>were you going to book a trip on Porter’s one day every day sale to sunny Miami?</span></h2>
+                    <div class="half-wrap img-wrap">
+                        <img src="images/porter.png" alt="">
+                    </div>
+                    <div class="bttn-wrap">
+                        <button class="yes">Eureka!</button>
+                        <button class="no">No thanks</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h2>you look old: <span>were you going to book an appointment for a rejuvasuction liposuction botox lift?</span></h2>
+                    <div class="half-wrap img-wrap">
+                        <img src="images/old.png" alt="">
+                    </div>
+                    <div class="bttn-wrap">
+                        <button class="yes">Eureka!</button>
+                        <button class="no">No thanks</button>
+                    </div>
+                </div>
+                <div class="option something-else">
+                    <h1>don't worry, let's try something else</h1>
+                    <div class="three-bttn-wrap bttn-wrap">
+                        <button id="step1">trending</button>
+                        <button id="step2">selfie analysis</button>
+                        <button id="step3">browser history</button>
+                    </div>
+                </div>
+            </section>
+            <!-- browser -->
+            <section class="wrap step step3">
+                <h3>your browser history</h3>
+                <div class="option" id="option-3">
+                    <h2>you were creeping your crush’s Facebook page: <span>were you going to start a flirty conversation with him? </span></h2>
+                    <div class="img-wrap">
+                        <img src="images/mark.png" alt="">
+                    </div>
+                    <div class="bttn-wrap">
+                        <button class="yes">Eureka!</button>
+                        <button class="no">No thanks</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h2>you were on okcupid <span>were you going to apply for the Bachelorette?</span></h2>
+                    <div class="half-wrap img-wrap">
+                        <img src="images/bachelor.png" alt="">
+                    </div>
+                    <div class="bttn-wrap">
+                        <button class="yes">Eureka!</button>
+                        <button class="no">No thanks</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <h2>suicide prevention hotline<span> were you going to follow through on something for once like your mother’s been asking for years</span></h2>
+                    <div class="half-wrap img-wrap">
+                        <img src="images/suicide.jpg">
+                    </div>
+                    <div class="bttn-wrap">
+                        <button class="yes">Eureka!</button>
+                        <button class="no last">No thanks</button>
+                    </div>
+                </div>
+              
+            </section>
+            <section class="wrap step mb-wrapper">
+                <div class="loading">
+                   <h2>Analyzing data...</h2>
+                    <img src="img/einstein.png">
+                </div>
+                <h2>well, it looks like you have forgotten, but don't worry, you're not an idiot—it's science! how about just doing what you normally do at this time ...</h2>
+                <button class="mb">Okay ... </button>
+                <div class="mb-wrap">
+                    <img src="images/self-love.png" class="mb-img" id="masterbate">
+                </div>
+            </section>
+        </section>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+        $('.forgot').click(function(){
+    $('.step0').hide();
+    $('.first-screne').show();
+});
+
+$('.no').click(function(){
+    $('span').hide();
+    $('img').hide();
+    $(this).parent().parent().hide();
+    $(this).parent().parent().next().show();
+
+    $('img').delay('1200').fadeIn();
+    $('h2 span').delay('1200').fadeIn();
+});
+
+
+
+
+$('#step1').click(function(){
+
+    $('.first-screen').hide();
+    $('.something-else').hide();
+    $('.option').hide();
+    $('.wrap').hide();
+
+    $('h2 span').delay('1200').fadeIn();
+    $('.img-wrap').delay('1300').fadeIn();
+
+    $('.step1').show();
+    $('#option-1').show();
+
+
+
+    
+});
+
+
+$('#step2').click(function(){
+    console.log('sup')
+    $('#donotshow').hide();
+
+    $('h2 span').hide();
+    $('.img-wrap').hide();
+
+    $('.first-screen').hide();
+    $('.something-else').hide();
+    $('.option').hide();
+    $('.wrap').hide();
+
+
+    $('h2 span').delay('1800').fadeIn();
+    $('.img-wrap').delay('1800').fadeIn();
+
+    $('.step2').show();
+    $('#option-2').show();
+});
+
+
+$('#step3').click(function(){
+    console.log('three')
+    $('.first-screen').hide();
+    $('.something-else').hide();
+    $('.option').hide();
+    $('.wrap').hide();
+
+    $('.step3').show();
+    $('#option-3').show();
+
+    $('h2 span').delay('1200').fadeIn();
+    $('.img-wrap').delay('1300').fadeIn();
+});
+
+
+$('.three-bttn-wrap button').click(function(){
+    $(this).find('span').show();
+})
+
+$('.three-bttn-wrap button#step1').click(function(){
+
+    $('.something-else').hide();
+    $('.wrap').hide();
+    
+    $('.step1').show();
+    $('#option-1').show();
+
+    // $('h2 span').delay('1200').fadeIn();
+
+});
+
+$('.three-bttn-wrap button#step2').click(function(){
+    $('.something-else').hide();
+    $('.wrap').hide();
+    $('.step2').show();
+    $('#option-2').show();
+
+    // $('h2 span').delay('1200').fadeIn();
+});
+
+$('.three-bttn-wrap button#step3').click(function(){
+    $('.something-else').hide();
+    $('.wrap').hide();
+    $('.step3').show();
+    $('#option-3').show();
+
+    // $('h2 span').delay('1200').fadeIn();
+});
+
+$('.last').click(function() {
+    $('.option').hide();
+    $('.wrap').hide();
+    $('.mb-wrapper').show();
+    $('.mb').show();
+});
+
+$('.mb').click(function() {
+
+    $(".loading").show();
+    setTimeout(function() {
+        $(".loading").remove();
+
+
+        $('#masterbate').show();
+    }, 3000);
+
+    $('.mb').hide();
+    $('.mb-wrapper h2').hide();
+    
+})
+
+$('.yes').click(function(){
+    $('.pop-up').show();
+});
+
+
+$(window).scroll(function(){
+    $('.placeholder').remove();
+});
+</script>
+
+</html>
