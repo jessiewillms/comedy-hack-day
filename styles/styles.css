@@ -20,6 +20,11 @@ img {
 body {
   font-family: "Poppins", Georgia; }
 
+.placeholder {
+  width: 100%;
+  height: 1000px;
+  background: black; }
+
 .wrapper {
   width: 100%;
   height: 100vh; }
@@ -27,7 +32,7 @@ body {
 .wrap {
   display: none;
   margin: 0;
-  padding: 3%;
+  padding: 3% 10%;
   width: 100%;
   height: 100vh; }
 
@@ -36,15 +41,16 @@ h1 {
   font-size: 120px;
   line-height: 103px; }
 
+h2 {
+  font-size: 38px; }
+
 h1 + h2 {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 65px;
   padding-right: 10%; }
 
 h2 {
   margin-bottom: 3%;
   color: #a1a1a1;
-  font-size: 32px;
   line-height: 1.25; }
 
 h2 span {
@@ -80,9 +86,13 @@ h3 {
 .pop-up {
   display: none; }
 
+#masterbate {
+  display: none; }
+
 .img-wrap {
   overflow: hidden;
-  max-height: 400px; }
+  max-height: 500px;
+  display: none; }
 
 .img-wrap img {
   display: block;
@@ -139,13 +149,90 @@ button {
   font-size: 22px; }
 
 button.yes {
-  color: rgba(255, 255, 255, 0.4); }
+  color: white; }
 
 .letter {
   color: white; }
 
 .mb-wrapper {
-  background: #C0392B; }
+  background: #C0392B;
+  padding: 10%;
+  color: #fff; }
 
 .mb {
   display: none; }
+
+.pop-up {
+  width: 100%;
+  height: 100vh;
+  background: #F1C40F; }
+
+.logo-top {
+  top: 5%;
+  right: 5%;
+  position: fixed;
+  max-width: 50px; }
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(720deg);
+    opacity: 0.5; } }
+
+@keyframes fade-out {
+  from {
+    opacity: 0.8; }
+  to {
+    opacity: 0; } }
+
+.loading {
+  text-align: center;
+  display: none;
+  margin-bottom: 300px; }
+
+.loading img {
+  animation-name: spinning;
+  animation-duration: 200ms;
+  animation-delay: 100ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 60%;
+  margin-bottom: 300px; }
+
+.loading h2 {
+  padding-top: 0.5em; }
+
+.logo {
+  text-align: center;
+  position: relative;
+  font-family: "Poppins", Georgia; }
+
+.logo img {
+  width: 40%; }
+
+.logo h1 {
+  opacity: 0.8;
+  position: absolute;
+  top: 25%;
+  left: 25.5%;
+  width: 50%;
+  font-size: 60px;
+  letter-spacing: 25px;
+  margin: 0; }
+
+.logo h1 span {
+  color: #fff;
+  animation-name: fade-out;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out; }
+
+#botox img {
+  float: left;
+  margin-right: 3em; }
+
+#botox li {
+  margin-bottom: 0.5em; }

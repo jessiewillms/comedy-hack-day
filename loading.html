@@ -1,107 +1,107 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>untitled</title>
-	<meta name="generator" content="TextMate http://macromates.com/">
-	<meta name="author" content="gabriel">
-  <style type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>untitled</title>
+    <meta name="generator" content="TextMate http://macromates.com/">
+    <meta name="author" content="gabriel">
+    <style type="text/css">
     @keyframes spinning {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(720deg); opacity: 0.5; }
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(720deg);
+            opacity: 0.5;
+        }
     }
     
     @keyframes fade-out {
-      from { opacity: 0.8;}
-      to {
-        opacity: 0;
-      }
+        from {
+            opacity: 0.8;
+        }
+        to {
+            opacity: 0;
+        }
     }
     
     .loading {
-      padding: 10%;
-      text-align: center;
-    }
-    .loading img {
-      animation-name: spinning;
-      animation-duration: 400ms;
-      animation-delay: 100ms;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      width: 60%;
-    }
-    .loading h2 {
-      padding-top: 0.5em;
-      font: bold 48px "Courier New";
+        padding: 10%;
+        text-align: center;
     }
     
+    .loading img {
+        animation-name: spinning;
+        animation-duration: 400ms;
+        animation-delay: 100ms;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        width: 60%;
+    }
+    
+    .loading h2 {
+        padding-top: 0.5em;
+        font: bold 48px "Courier New";
+    }
     
     .logo {
-      text-align: center;
-      position: relative;
+        text-align: center;
+        position: relative;
     }
-    .logo img {
-      width: 40%;
-    }
-    .logo h1 {
-      color: green;
-      color: red;
-      opacity: 0.8;
-      position: absolute;
-      top: 40%;
-      left: 25.5%;
-      width: 50%;
-      font-size: 60px;
-      letter-spacing: 25px;
-      margin: 0;
-      font-family: Helvetica;
-    }
-    .logo h1 span {
-      color: red;
-      animation-name: fade-out;
-      animation-duration: 2s;
-      animation-delay: 4s;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-in-out;
-    }
-    html { font-family: Helvetica; }
-    #botox img { float: left; margin-right: 3em;}
-    #botox li {
-      margin-bottom: 0.5em;
-    }
-  </style>
-</head>
-<body>
-  <div class="loading">
-    <img src="img/einstein.png">
-    <h2>Analyzing data...</h2>
-  </div>
-
-  
-  <hr>
     
-  <div class="logo">
-    <img src="img/einstein.png">
-    <h1><span>eu</span>r<span>e</span>k<span>a!</span></h1>
-  </div>
-  
-  <hr>
-  
-  <div id="botox">
-    <p>We found 3 highly-recommended plastic surgeons close to you:</p>
-    <img src="img/botox-map.png">
-    <ol>
-      <li>Dr. Mitchell Brown<br>
-        (416) 323-6336</li>
-      <li>Dr. Philip Solomon MD, FRCSC<br>
-        (905) 764-7799</li>
-      <li>Toronto Cosmetic Surgery Institute<br>
-         (416) 834-6640
-         <img src="img/botox-ad.jpg">
-         </li>
-    </ol>
-  </div>  
-</body>
+    .logo img {
+        width: 40%;
+    }
+    
+    .logo h1 {
+        color: green;
+        color: red;
+        opacity: 0.8;
+        position: absolute;
+        top: 40%;
+        left: 25.5%;
+        width: 50%;
+        font-size: 60px;
+        letter-spacing: 25px;
+        margin: 0;
+        font-family: Helvetica;
+    }
+    
+    .logo h1 span {
+        color: red;
+        animation-name: fade-out;
+        animation-duration: 2s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    
+    html {
+        font-family: Helvetica;
+    }
+    
+    #botox img {
+        float: left;
+        margin-right: 3em;
+    }
+    
+    #botox li {
+        margin-bottom: 0.5em;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="loading">
+        <img src="img/einstein.png">
+        <h2>Analyzing data...</h2>
+    </div>
+    <hr>
+    <div class="logo">
+        <img src="img/einstein.png">
+        <h1><span>eu</span>r<span>e</span>k<span>a!</span></h1>
+    </div>
+
 </html>
